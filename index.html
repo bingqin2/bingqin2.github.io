@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" data-theme-setting="system" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bingqin Wang</title>
+  <meta name="description" content="Bingqin Wang is a Master of Computer Science student at UIUC who builds backend and distributed systems in Java, Python, Go, and TypeScript. Seeking Summer 2027 software engineering internships in the United States.">
+  <meta name="theme-color" content="#171d2e">
+  <meta property="og:title" content="Bingqin Wang">
+  <meta property="og:description" content="MCS student at UIUC. Backend and distributed systems. Seeking Summer 2027 software engineering internships in the US.">
+  <meta property="og:url" content="https://bingqin2.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://bingqin2.github.io/">
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem('theme');
+        var setting = (s === 'light' || s === 'dark') ? s : 'system';
+        var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = setting === 'system' ? (dark ? 'dark' : 'light') : setting;
+        document.documentElement.setAttribute('data-theme-setting', setting);
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bingqin Wang",
+    "url": "https://bingqin2.github.io/",
+    "email": "mailto:bingqin2@illinois.edu",
+    "jobTitle": "Master of Computer Science student",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Southern University of Science and Technology" },
+    "sameAs": [
+      "https://github.com/bingqin2",
+      "https://www.linkedin.com/in/bingqin-wang",
+      "https://scholar.google.com/citations?user=je1AOpoAAAAJ&hl=en"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="navbar-inner">
+      <button class="navbar-avatar" id="navbar-avatar" type="button" aria-label="Back to top">
+        <img src="assets/img/avatar.svg" alt="">
+      </button>
+      <a class="brand" href="/" aria-label="Bingqin Wang, home"><strong>Bingqin</strong> Wang</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Theme: follows your system. Click to change.">
+        <i class="fa-solid fa-desktop" data-theme-icon="system" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun" data-theme-icon="light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon" data-theme-icon="dark" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="ribbon" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="hero">
+    <div class="identity reveal" style="--delay: 0ms">
+      <div class="hello" id="hello" aria-live="polite"><span class="hello-text" id="hello-text">Hi there</span></div>
+      <button class="mascot" id="mascot" type="button" aria-label="Say hi">
+        <img src="assets/img/avatar.svg" alt="Bingqin Wang">
+      </button>
+    </div>
+
+    <section class="prompt reveal" style="--delay: 80ms" aria-label="About Bingqin Wang">
+      <p class="bio" id="bio"></p>
+      <div class="prompt-actions">
+        <div class="action-group">
+          <a class="action" href="https://github.com/bingqin2" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a class="action" href="https://www.linkedin.com/in/bingqin-wang" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a class="action" href="https://scholar.google.com/citations?user=je1AOpoAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+        </div>
+        <details class="model-select" id="model-select">
+          <summary aria-label="Choose which introduction to show"><span class="model-variant" id="model-variant">Engineer</span><span class="model-brand">Bingqin</span></summary>
+          <div class="model-options" role="listbox" aria-label="Introduction">
+            <button type="button" role="option" data-persona="engineer" aria-selected="true">Engineer</button>
+            <button type="button" role="option" data-persona="researcher" aria-selected="false">Researcher</button>
+          </div>
+        </details>
+        <a class="action action-email" href="mailto:bingqin2@illinois.edu" title="Email" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <template id="bio-engineer">
+      I am a Master of Computer Science student at <a href="https://illinois.edu/">UIUC</a> (2026 – 2028). I build backend and distributed systems in <strong>Java, Python, Go, and TypeScript</strong>: LLM API gateways, workflow engines, and real-time collaboration tools. I also contribute to <a href="https://github.com/apache/airflow">Apache Airflow</a>. Before UIUC, I earned a B.Eng. in Computer Science and Engineering at <a href="https://www.sustech.edu.cn/en/">SUSTech</a> (2022 – 2026) and interned at <a href="https://statelabs.ai">State Labs</a>. I am looking for <strong>Summer 2027 software engineering internships</strong> in the United States.
+    </template>
+    <template id="bio-researcher">
+      I am a Master of Computer Science student at <a href="https://illinois.edu/">UIUC</a>. My research background is in computer vision: weakly supervised semantic segmentation with Prof. Chenyu You at <a href="https://ai.stonybrook.edu/">Stony Brook University</a> (SPOT, under review) and single-source domain generalization for retinal vessel segmentation at <a href="https://www.sustech.edu.cn/en/">SUSTech</a> (BIRF-SDG, <a href="https://link.springer.com/chapter/10.1007/978-981-95-0036-9_23">ICIC 2025</a> oral). I am now interested in how AI agents can support software development, and I build the systems behind them.
+    </template>
+
+    <nav class="quick-links reveal" style="--delay: 160ms" aria-label="Sections">
+      <button class="quick-link" type="button" data-panel="experience" aria-expanded="false" aria-controls="panel-experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Experience</span></button>
+      <button class="quick-link" type="button" data-panel="projects" aria-expanded="false" aria-controls="panel-projects"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Projects</span></button>
+      <button class="quick-link" type="button" data-panel="publications" aria-expanded="false" aria-controls="panel-publications"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></button>
+      <a class="quick-link" href="files/CV_English_Bingqin_Wang.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><span>Résumé</span></a>
+    </nav>
+
+    <div class="panels">
+      <div class="panel-wrap" id="panel-experience">
+        <section class="panel" aria-labelledby="experience-title">
+          <div class="panel-inner" inert>
+            <h2 id="experience-title">Experience</h2>
+            <article class="entry">
+              <h3>Software Engineer Intern · <a href="https://statelabs.ai">State Labs</a> <span class="light">(Lingtai Technology)</span></h3>
+              <p class="meta">Shenzhen, China · May 2026 – Aug 2026</p>
+              <ul>
+                <li>Developed a Spring Boot API gateway exposing generation APIs compatible with OpenAI, Gemini, and Anthropic clients and returning JSON responses or SSE streams.</li>
+                <li>Implemented a Gemini adapter that maps conversation history and generation parameters to an OpenAI-compatible upstream and translates responses and SSE chunks back into Gemini format.</li>
+                <li>Implemented optimistic locking and bounded retries for balance deductions, recorded partial charges, stripped client-supplied identity headers, and added JUnit and Mockito tests for billing logic.</li>
+              </ul>
+            </article>
+            <article class="entry">
+              <h3>Research Assistant · <a href="https://ai.stonybrook.edu/">AI Innovation Institute, Stony Brook University</a></h3>
+              <p class="meta">Remote · Apr 2025 – Nov 2025 · Advisor: Prof. Chenyu You</p>
+              <ul>
+                <li>Built a PyTorch pipeline for weakly supervised segmentation, generating pixel-level pseudo-labels from image-level tags.</li>
+                <li>Trained segmentation models with ResNet-50 and DINOv3 backbones using multi-GPU mixed precision, reaching 76.8% mIoU with DINOv3 on VOC.</li>
+              </ul>
+            </article>
+
+            <h2>Education</h2>
+            <article class="entry compact">
+              <h3><a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a></h3>
+              <p class="meta">Master of Computer Science · Aug 2026 – May 2028 (expected) · Champaign, IL</p>
+            </article>
+            <article class="entry compact">
+              <h3><a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology</a></h3>
+              <p class="meta">B.Eng. in Computer Science and Engineering · Sep 2022 – Jul 2026 · Shenzhen, China</p>
+            </article>
+
+            <h2>Skills</h2>
+            <dl class="skills">
+              <div><dt>Languages</dt><dd>Java, Python, Go, C++, TypeScript, JavaScript, SQL, Bash</dd></div>
+              <div><dt>Backend</dt><dd>Spring Boot, Spring Cloud Gateway, FastAPI, REST APIs, PostgreSQL, MySQL, Redis, MyBatis, Kafka</dd></div>
+              <div><dt>Frontend</dt><dd>React, TypeScript, HTML, CSS</dd></div>
+              <div><dt>DevOps</dt><dd>Docker, Linux, Nginx, Git, GitHub Actions, CI/CD, Maven</dd></div>
+              <div><dt>Fundamentals</dt><dd>distributed systems, concurrency, operating systems, networking, security, object-oriented design</dd></div>
+            </dl>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel-wrap" id="panel-projects">
+        <section class="panel" aria-labelledby="projects-title">
+          <div class="panel-inner" inert>
+            <h2 id="projects-title">Projects</h2>
+            <div class="cards">
+              <article class="card">
+                <h3><a href="https://github.com/bingqin2/PatchPilot">PatchPilot</a> <i class="fa-brands fa-github card-icon" aria-hidden="true"></i></h3>
+                <p class="stack">Java 21 · Spring Boot · MySQL · Docker</p>
+                <p>A self-hosted GitHub issue-to-PR agent: a webhook trigger, safety gates, a durable MySQL task queue, guarded repository tools, adapter-driven test verification, and pull requests opened for human review.</p>
+                <p class="links"><a href="https://github.com/bingqin2/PatchPilot">Repository</a> · <a href="https://github.com/bingqin2/patchpilot-demo-java">Live demo target</a></p>
+              </article>
+              <article class="card">
+                <h3><a href="https://github.com/bingqin2/hy3-termscope">TermScope</a> <i class="fa-brands fa-github card-icon" aria-hidden="true"></i></h3>
+                <p class="stack">Python · Agent evaluation</p>
+                <p>Process evaluation and causal error localization for LLM terminal agents on Terminal-Bench 2.0: judge runs as processes, not only by outcome, and find the step where a failed run went wrong.</p>
+                <p class="links"><a href="https://github.com/bingqin2/hy3-termscope">Repository</a> · <a href="https://bingqin2.github.io/hy3-termscope/">Report and results</a></p>
+              </article>
+              <article class="card wide">
+                <h3>Distributed Workflow Engine for GitHub Analytics <span class="tag">team project · private</span></h3>
+                <p class="stack">Python · PostgreSQL · asyncio · Docker · Mar 2026 – May 2026</p>
+                <ul>
+                  <li>Built a distributed DAG engine for GitHub activity analytics, coordinating schedulers and workers through PostgreSQL transactions, task leases, and heartbeats.</li>
+                  <li>Implemented dynamic task expansion for parallel data processing and asynchronous triggers that release worker slots while waiting for external data.</li>
+                  <li>Added partitioned backfills and idempotent result publication, using fault injection to verify output consistency across worker crashes, retries, and repeated backfills.</li>
+                </ul>
+              </article>
+              <article class="card wide">
+                <h3>Real-Time Collaborative Markdown Editor <span class="tag">team project · private</span></h3>
+                <p class="stack">Go · TypeScript · PostgreSQL · WebSocket · IndexedDB · Oct 2025 – Dec 2025</p>
+                <ul>
+                  <li>Built an operational transformation engine in Go and TypeScript for collaborative Markdown editing, validating document convergence under concurrent edits with shared cross-language tests.</li>
+                  <li>Designed a WebSocket synchronization protocol with operation IDs, acknowledgments, and durable deduplication, and persisted pending edits in IndexedDB for recovery after disconnects and page reloads.</li>
+                  <li>Implemented transactional operation logs and versioned snapshots in PostgreSQL, acknowledging edits only after commit and testing recovery from crashes before and after transaction completion.</li>
+                </ul>
+              </article>
+              <article class="card wide">
+                <h3><a href="https://github.com/apache/airflow">Apache Airflow</a> contributions <i class="fa-solid fa-code-branch card-icon" aria-hidden="true"></i></h3>
+                <p class="stack">Python · Amazon and FAB providers · 4 merged, 6 under review</p>
+                <ul>
+                  <li><a href="https://github.com/apache/airflow/pull/72570">#72570</a> Failure-path and serialization tests for the Step Functions execution trigger.</li>
+                  <li><a href="https://github.com/apache/airflow/pull/72824">#72824</a> Pickle round-trip fix for Amazon provider exceptions, with tests.</li>
+                  <li><a href="https://github.com/apache/airflow/pull/72950">#72950</a> Close the session after the FAB permissions collection read.</li>
+                  <li><a href="https://github.com/apache/airflow/pull/72951">#72951</a> Log the HTTP response in HttpToS3Operator when log_response is set.</li>
+                </ul>
+              </article>
+            </div>
+            <p class="earlier"><strong>Earlier:</strong> <a href="https://github.com/bingqin2/CourseAwareIDE">CourseAwareIDE</a>, a VS Code extension for course management (TypeScript, Python, PostgreSQL), and a <a href="https://github.com/bingqin2/cpp_facial_privacy_protection">real-time face anonymization tool</a> in C++ with OpenCV and YuNet.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel-wrap" id="panel-publications">
+        <section class="panel" aria-labelledby="publications-title">
+          <div class="panel-inner" inert>
+            <h2 id="publications-title">Publications</h2>
+            <ol class="pubs">
+              <li>
+                <p class="pub-title">SPOT: CAM-Guided Optimal Transport for Weakly Supervised Semantic Segmentation</p>
+                <p class="pub-authors"><strong>Bingqin Wang</strong>, Qin Ren, Wen Zhang, Yuting He, Zhiwen Fan, Chenyu You</p>
+                <p class="pub-venue">Under review, 2026</p>
+              </li>
+              <li>
+                <p class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-981-95-0036-9_23">BIRF-SDG: Band Importance Aware Random Frequency Filter Based Single-source Domain Generalization for Retinal Vessel Segmentation</a></p>
+                <p class="pub-authors"><strong>Bingqin Wang</strong>, Haojin Li, Heng Li, Hemu Liu, Jiang Liu</p>
+                <p class="pub-venue">International Conference on Intelligent Computing (ICIC) 2025 · <span class="oral">Oral</span></p>
+              </li>
+            </ol>
+            <p class="earlier">See also my <a href="https://scholar.google.com/citations?user=je1AOpoAAAAJ&amp;hl=en">Google Scholar profile</a>.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="updates reveal" style="--delay: 240ms" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">Updates</h2>
+      <ul class="updates-list">
+        <li><time datetime="2026-09">Sep 2026</time><span>Started the MCS program at UIUC. Four of my pull requests to Apache Airflow were merged (Amazon and FAB providers), and six more are under review.</span></li>
+        <li><time datetime="2026-08">Aug 2026</time><span>Finished a software engineering internship at State Labs, where I built an LLM API gateway in Spring Boot.</span></li>
+        <li><time datetime="2026-07">Jul 2026</time><span>Graduated from SUSTech with a B.Eng. in Computer Science and Engineering.</span></li>
+        <li><time datetime="2026-05">May 2026</time><span>Completed a distributed workflow engine for GitHub analytics (team project).</span></li>
+        <li><time datetime="2025-12">Dec 2025</time><span>Completed a real-time collaborative Markdown editor built on operational transformation (team project).</span></li>
+        <li><time datetime="2025-11">Nov 2025</time><span>Wrapped up my research assistantship at Stony Brook University on weakly supervised segmentation. The resulting paper, SPOT, is under review.</span></li>
+        <li><time datetime="2025">2025</time><span>BIRF-SDG was accepted as an oral paper at ICIC 2025.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Bingqin Wang · <a href="https://github.com/bingqin2/bingqin2.github.io">Source</a></p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

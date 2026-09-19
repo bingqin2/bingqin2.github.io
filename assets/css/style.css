@@ -97,7 +97,12 @@ strong { font-weight: 600; }
   box-shadow: 0 0 0 1px var(--card-border);
   transition: box-shadow .2s ease, transform .2s ease;
 }
-.navbar-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.navbar-avatar { background: linear-gradient(135deg, #5eb8ff, #6d7cff 55%, #b04fe0); }
+.navbar-avatar img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 12%;
+  transform: scale(1.4); transform-origin: 50% 32%;
+}
 .navbar-avatar:hover { box-shadow: 0 0 0 2px var(--accent); transform: translateY(-1px); }
 .brand {
   position: absolute; left: 50%; transform: translateX(-50%);
@@ -145,14 +150,14 @@ html.theme-transition, html.theme-transition *, html.theme-transition *::before,
 .identity {
   position: relative;
   height: 6.4rem;
-  --hidden-offset: 1.7rem;
-  --reveal-offset: 0.55rem;
+  --hidden-offset: 2.1rem;
+  --reveal-offset: 0.7rem;
 }
 .mascot {
   position: absolute;
   left: 50%; bottom: 0;
-  width: 5.6rem; height: 5.6rem;
-  padding: 0; border: 0; border-radius: 50%;
+  width: 6.6rem; height: 6.6rem;
+  padding: 0; border: 0;
   background: transparent; cursor: pointer;
   transform: translate(-50%, var(--hidden-offset));
   transition: transform .32s cubic-bezier(.2, .8, .2, 1);
@@ -160,8 +165,8 @@ html.theme-transition, html.theme-transition *, html.theme-transition *::before,
 }
 .mascot img {
   display: block; width: 100%; height: 100%;
-  border-radius: 50%;
-  box-shadow: 0 8px 22px var(--shadow), 0 0 0 3px var(--card);
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px var(--shadow));
 }
 .identity:hover .mascot, .identity.is-speaking .mascot { transform: translate(-50%, var(--reveal-offset)); }
 .hello {

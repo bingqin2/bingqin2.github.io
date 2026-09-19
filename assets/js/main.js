@@ -3,36 +3,46 @@
   var root = document.documentElement;
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Theme: system -> light -> dark ---------- */
+  /* ---------- Theme: light <-> dark, starting from the system preference ---------- */
   var mq = window.matchMedia('(prefers-color-scheme: dark)');
-  function themeSetting() {
+  var toggle = document.getElementById('theme-toggle');
+  function storedTheme() {
     var s = null;
     try { s = localStorage.getItem('theme'); } catch (e) {}
-    return (s === 'light' || s === 'dark') ? s : 'system';
+    return (s === 'light' || s === 'dark') ? s : null;
   }
-  function applyTheme() {
-    var s = themeSetting();
-    var t = s === 'system' ? (mq.matches ? 'dark' : 'light') : s;
-    root.setAttribute('data-theme-setting', s);
+  function setTheme(t) {
     root.setAttribute('data-theme', t);
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', t === 'dark' ? '#171d2e' : '#f6f7fb');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.title = 'Theme: ' + (s === 'system' ? 'follows your system' : s) + '. Click to change.';
+    if (toggle) {
+      var label = 'Switch to ' + (t === 'dark' ? 'light' : 'dark') + ' theme';
+      toggle.setAttribute('aria-label', label);
+      toggle.title = label;
+    }
   }
-  var toggle = document.getElementById('theme-toggle');
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var s = themeSetting();
-      var next = s === 'system' ? 'light' : (s === 'light' ? 'dark' : 'system');
-      try {
-        if (next === 'system') localStorage.removeItem('theme'); else localStorage.setItem('theme', next);
-      } catch (e) {}
-      applyTheme();
+  function switchTheme() {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    var run = function () {
+      setTheme(next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    };
+    if (reduceMotion) { run(); return; }
+    if (typeof document.startViewTransition === 'function') {
+      document.startViewTransition(run);
+    } else {
+      root.classList.add('theme-transition');
+      run();
+      setTimeout(function () { root.classList.remove('theme-transition'); }, 600);
+    }
+  }
+  if (toggle) toggle.addEventListener('click', switchTheme);
+  if (mq.addEventListener) {
+    mq.addEventListener('change', function () {
+      if (!storedTheme()) setTheme(mq.matches ? 'dark' : 'light');
     });
   }
-  if (mq.addEventListener) mq.addEventListener('change', applyTheme);
-  applyTheme();
+  setTheme(storedTheme() || (mq.matches ? 'dark' : 'light'));
 
   /* ---------- Persona: which introduction to show ---------- */
   var bio = document.getElementById('bio');

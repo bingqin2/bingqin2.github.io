@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
@@ -26,8 +26,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
   {
@@ -48,17 +46,31 @@
   </script>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <!-- Icons: Font Awesome Free 6.5.2 by @fontawesome, https://fontawesome.com, CC BY 4.0; Google Scholar mark from Simple Icons, CC0. -->
+    <symbol id="i-sun" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+    <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></symbol>
+    <symbol id="i-diagram-project" viewBox="0 0 576 512"><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"/></symbol>
+    <symbol id="i-book-open" viewBox="0 0 576 512"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/></symbol>
+    <symbol id="i-file-lines" viewBox="0 0 384 512"><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></symbol>
+    <symbol id="i-code-branch" viewBox="0 0 448 512"><path d="M80 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM80 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></symbol>
+  </svg>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="navbar">
     <div class="navbar-inner">
       <button class="navbar-avatar" id="navbar-avatar" type="button" aria-label="Back to top">
-        <img src="assets/img/avatar.png" alt="">
+        <img src="assets/img/avatar-256.png" alt="" width="256" height="256">
       </button>
       <a class="brand" href="/" aria-label="Bingqin Wang, home"><strong>Bingqin</strong> Wang</a>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
-        <i class="fa-solid fa-sun" data-theme-icon="light" aria-hidden="true"></i>
-        <i class="fa-solid fa-moon" data-theme-icon="dark" aria-hidden="true"></i>
+        <svg class="icon" data-theme-icon="light" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon" data-theme-icon="dark" aria-hidden="true"><use href="#i-moon"/></svg>
       </button>
     </div>
     <div class="ribbon" aria-hidden="true"></div>
@@ -68,7 +80,7 @@
     <div class="identity reveal" style="--delay: 0ms">
       <div class="hello" id="hello" aria-live="polite"><span class="hello-text" id="hello-text">Hi there</span></div>
       <button class="mascot" id="mascot" type="button" aria-label="Say hi">
-        <img src="assets/img/avatar.png" alt="Cartoon avatar of Bingqin Wang">
+        <img src="assets/img/avatar-256.png" srcset="assets/img/avatar-256.png 256w, assets/img/avatar-320.png 320w" sizes="106px" width="256" height="256" fetchpriority="high" alt="Cartoon avatar of Bingqin Wang">
       </button>
     </div>
 
@@ -76,9 +88,9 @@
       <p class="bio" id="bio"></p>
       <div class="prompt-actions">
         <div class="action-group">
-          <a class="action" href="https://github.com/bingqin2" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-          <a class="action" href="https://www.linkedin.com/in/bingqin-wang" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-          <a class="action" href="https://scholar.google.com/citations?user=je1AOpoAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+          <a class="action" href="https://github.com/bingqin2" title="GitHub" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a class="action" href="https://www.linkedin.com/in/bingqin-wang" title="LinkedIn" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a class="action" href="https://scholar.google.com/citations?user=je1AOpoAAAAJ&amp;hl=en" title="Google Scholar" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg></a>
         </div>
         <details class="model-select" id="model-select">
           <summary aria-label="Choose which introduction to show"><span class="model-variant" id="model-variant">Engineer</span><span class="model-brand">Bingqin</span></summary>
@@ -87,7 +99,7 @@
             <button type="button" role="option" data-persona="researcher" aria-selected="false">Researcher</button>
           </div>
         </details>
-        <a class="action action-email" href="mailto:bingqin2@illinois.edu" title="Email" aria-label="Email"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+        <a class="action action-email" href="mailto:bingqin2@illinois.edu" title="Email" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg></a>
       </div>
     </section>
 
@@ -99,10 +111,10 @@
     </template>
 
     <nav class="quick-links reveal" style="--delay: 160ms" aria-label="Sections">
-      <button class="quick-link" type="button" data-panel="experience" aria-expanded="false" aria-controls="panel-experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Experience</span></button>
-      <button class="quick-link" type="button" data-panel="projects" aria-expanded="false" aria-controls="panel-projects"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Projects</span></button>
-      <button class="quick-link" type="button" data-panel="publications" aria-expanded="false" aria-controls="panel-publications"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Publications</span></button>
-      <a class="quick-link" href="files/CV_English_Bingqin_Wang.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><span>Résumé</span></a>
+      <button class="quick-link" type="button" data-panel="experience" aria-expanded="false" aria-controls="panel-experience"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><span>Experience</span></button>
+      <button class="quick-link" type="button" data-panel="projects" aria-expanded="false" aria-controls="panel-projects"><svg class="icon" aria-hidden="true"><use href="#i-diagram-project"/></svg><span>Projects</span></button>
+      <button class="quick-link" type="button" data-panel="publications" aria-expanded="false" aria-controls="panel-publications"><svg class="icon" aria-hidden="true"><use href="#i-book-open"/></svg><span>Publications</span></button>
+      <a class="quick-link" href="files/CV_English_Bingqin_Wang.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file-lines"/></svg><span>Résumé</span></a>
     </nav>
 
     <div class="panels">
@@ -156,13 +168,13 @@
             <h2 id="projects-title">Projects</h2>
             <div class="cards">
               <article class="card">
-                <h3><a href="https://github.com/bingqin2/PatchPilot">PatchPilot</a> <i class="fa-brands fa-github card-icon" aria-hidden="true"></i></h3>
+                <h3><a href="https://github.com/bingqin2/PatchPilot">PatchPilot</a> <svg class="icon card-icon" aria-hidden="true"><use href="#i-github"/></svg></h3>
                 <p class="stack">Java 21 · Spring Boot · MySQL · Docker</p>
                 <p>A self-hosted GitHub issue-to-PR agent: a webhook trigger, safety gates, a durable MySQL task queue, guarded repository tools, adapter-driven test verification, and pull requests opened for human review.</p>
                 <p class="links"><a href="https://github.com/bingqin2/PatchPilot">Repository</a> · <a href="https://github.com/bingqin2/patchpilot-demo-java">Live demo target</a></p>
               </article>
               <article class="card">
-                <h3><a href="https://github.com/bingqin2/hy3-termscope">TermScope</a> <i class="fa-brands fa-github card-icon" aria-hidden="true"></i></h3>
+                <h3><a href="https://github.com/bingqin2/hy3-termscope">TermScope</a> <svg class="icon card-icon" aria-hidden="true"><use href="#i-github"/></svg></h3>
                 <p class="stack">Python · Agent evaluation</p>
                 <p>Process evaluation and causal error localization for LLM terminal agents on Terminal-Bench 2.0: judge runs as processes, not only by outcome, and find the step where a failed run went wrong.</p>
                 <p class="links"><a href="https://github.com/bingqin2/hy3-termscope">Repository</a> · <a href="https://bingqin2.github.io/hy3-termscope/">Report and results</a></p>
@@ -186,7 +198,7 @@
                 </ul>
               </article>
               <article class="card wide">
-                <h3><a href="https://github.com/apache/airflow">Apache Airflow</a> contributions <i class="fa-solid fa-code-branch card-icon" aria-hidden="true"></i></h3>
+                <h3><a href="https://github.com/apache/airflow">Apache Airflow</a> contributions <svg class="icon card-icon" aria-hidden="true"><use href="#i-code-branch"/></svg></h3>
                 <p class="stack">Python · Amazon and FAB providers · 4 merged, 6 under review</p>
                 <ul>
                   <li><a href="https://github.com/apache/airflow/pull/72570">#72570</a> Failure-path and serialization tests for the Step Functions execution trigger.</li>
@@ -242,6 +254,6 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
-  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "325764b6e20245dda714be3e5b65f8bf"}'></script><!-- End Cloudflare Web Analytics -->
+  <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "325764b6e20245dda714be3e5b65f8bf"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

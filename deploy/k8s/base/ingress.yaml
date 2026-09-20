@@ -1,0 +1,21 @@
+# Replace the host with your own domain. For TLS, add a cert-manager
+# annotation and a tls block once an issuer is installed in the cluster.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bingqin-site
+  labels:
+    app.kubernetes.io/name: bingqin-site
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: site.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bingqin-site
+                port:
+                  name: http

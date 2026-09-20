@@ -1,0 +1,11 @@
+# Local preview of the site exactly as the container serves it:
+#   docker compose up --build   ->   http://localhost:8080
+services:
+  site:
+    build: .
+    image: ghcr.io/bingqin2/bingqin2.github.io:local
+    ports:
+      - "8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp

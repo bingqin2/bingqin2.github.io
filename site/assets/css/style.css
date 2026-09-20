@@ -121,9 +121,11 @@ strong { font-weight: 600; }
   transition: background-color .2s ease, color .2s ease;
 }
 .theme-toggle:hover { background: var(--tag-bg); color: var(--accent); }
-.theme-toggle i { display: none; }
-html[data-theme="light"] .theme-toggle i[data-theme-icon="light"],
-html[data-theme="dark"] .theme-toggle i[data-theme-icon="dark"] { display: inline-block; }
+.icon { display: inline-block; width: 1em; height: 1em; fill: currentColor; vertical-align: -.125em; }
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.theme-toggle .icon { display: none; }
+html[data-theme="light"] .theme-toggle .icon[data-theme-icon="light"],
+html[data-theme="dark"] .theme-toggle .icon[data-theme-icon="dark"] { display: inline-block; }
 
 /* Theme change: crossfade the whole page (View Transitions API) */
 ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .55s; animation-timing-function: ease; }
@@ -326,7 +328,7 @@ html.theme-transition, html.theme-transition *, html.theme-transition *::before,
   box-shadow: 0 2px 8px var(--shadow);
   transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease, color .18s ease;
 }
-.quick-link i { color: var(--accent); font-size: .95rem; width: 1em; text-align: center; }
+.quick-link .icon { color: var(--accent); font-size: .95rem; }
 .quick-link:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 12px var(--shadow); }
 .quick-link.is-active {
   border-color: var(--accent);

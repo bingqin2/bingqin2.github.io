@@ -1,0 +1,5 @@
+# Only the static site and the nginx config go into the image.
+*
+!site/
+!docker/nginx.conf
+**/.DS_Store

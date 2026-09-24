@@ -16,6 +16,7 @@ Personal site of Bingqin Wang, live at [bingqin2.github.io](https://bingqin2.git
 | `site/assets/img/avatar-256.png`, `avatar-320.png`, `avatar.png` | The avatar (transparent PNG). The page loads the 256 or 320 px file through `srcset`; the 512 px file is the Open Graph preview. The hero shows it unmasked; the navbar crops it into a circle with CSS. |
 | Inline SVG sprite at the top of `index.html` | The eleven icons (Font Awesome Free, CC BY 4.0, plus the Google Scholar mark from Simple Icons, CC0), so no icon font is downloaded. |
 | `site/files/CV_English_Bingqin_Wang.pdf` | The public résumé (no phone number). |
+| `site/CoDraft/` | The CoDraft project page at `/CoDraft/`: `index.html`, `codraft.css` on the site's design tokens, and screenshots in `images/` as WebP, 1280 and 2560 px wide (390 and 780 px for the phone), picked through `srcset`. `images/og.jpg` is its Open Graph preview. |
 | `Dockerfile`, `docker/nginx.conf`, `compose.yaml` | nginx image: unprivileged user, port 8080, gzip, cache and security headers, custom 404 page, `/healthz`. |
 | `deploy/k8s/` | Kustomize manifests: a `base` (Deployment, Service, Ingress) and a `ci` overlay used by the workflow. |
 | `.github/workflows/` | CI checks, GitHub Pages deployment, container image publishing. |
